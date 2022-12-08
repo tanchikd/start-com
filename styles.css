@@ -411,8 +411,8 @@ textarea {
   }
 
   .welcome-wrapper {
-    direction: ltr;
     flex-direction: column-reverse;
+    align-items: center;
   }
 
   .welcome-block {
@@ -420,7 +420,8 @@ textarea {
   }
 
   .welcome-info,
-  .info-block-wrapper {
+  .info-block-wrapper,
+  .welcome-img {
     width: 100%;
   }
 
@@ -429,7 +430,7 @@ textarea {
   }
 
   .welcome-img img {
-    width: 350px;
+    max-width: 100%;
   }
 
   /* .menu {
@@ -551,7 +552,7 @@ textarea {
 
   .partners-imgs {
     flex-direction: column;
-    padding: 0;
+    padding: 0 0 2rem;
   }
 
   .partners-imgs img {
@@ -565,6 +566,7 @@ textarea {
 
   .info-block {
     flex-direction: column;
+    padding-bottom: 0;
   }
 
   .info-title {
