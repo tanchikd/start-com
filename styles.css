@@ -247,8 +247,8 @@ a:active {
 
 /* Footer */
 
-.footer {
-  margin-top: 3rem;
+footer {
+  margin-top: 3rem !important;
 }
 
 .footer-wrapper {
