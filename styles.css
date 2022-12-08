@@ -33,7 +33,7 @@ a:active {
   justify-content: center;
 }
 
-.button-all {
+.button {
   background-color: #000000;
   border: none;
   border-radius: 0.5rem;
@@ -118,7 +118,7 @@ a:active {
   text-align: right;
 }
 
-.welcome-bttn {
+.button-white {
   background-color: #ffffff;
   color: #000000 !important;
 }
@@ -144,7 +144,10 @@ a:active {
 }
 
 .main-block-text {
-  padding: 0 26rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-text {
@@ -169,6 +172,7 @@ a:active {
   font-size: 1.2rem;
   text-align: center;
   color: #000000;
+  max-width: 320px
 }
 
 /* Общие  */
@@ -181,7 +185,7 @@ a:active {
   align-items: center;
 }
 
-.info-block-text {
+.info-block-wrapper {
   width: 35%;
 }
 
@@ -206,7 +210,7 @@ a:active {
 
 /* Team */
 
-.team-members {
+.team-members-wrapper {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -214,19 +218,19 @@ a:active {
   padding: 2.5rem 0;
 }
 
-.team-members-wrapper {
+.team-member {
   padding: 1.5rem 2rem;
   background: #ffffff;
   box-shadow: 3px 4px 12px 1px #00000040;
   border-radius: 5px;
 }
 
-.team-members-wrapper img {
+.team-member img {
   width: 11rem;
   margin-bottom: 0.8rem;
 }
 
-.team-members-name {
+.team-member-name {
   font-weight: 700;
   font-size: 1.5rem;
   color: #212529;
@@ -234,7 +238,7 @@ a:active {
   text-align: left;
 }
 
-.team-members-position {
+.team-member-position {
   font-weight: 400;
   font-size: 1rem;
   color: #212529bf;
@@ -257,7 +261,10 @@ a:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 19%;
+}
+
+.footer-social-wrapper a {
+  padding: 0 0.5rem;
 }
 
 .footer-copyright-text {
@@ -413,7 +420,7 @@ textarea {
   }
 
   .welcome-info,
-  .info-block-text {
+  .info-block-wrapper {
     width: 100%;
   }
 
@@ -564,11 +571,11 @@ textarea {
     font-size: 1.5rem;
   }
 
-  .team-members {
+  .team-members-wrapper {
     flex-direction: column;
   }
 
-  .team-members-wrapper {
+  .team-member {
     margin-bottom: 2rem;
   }
 
@@ -622,4 +629,4 @@ textarea {
 .contact-map {
    width: 90%;
 }
-/* team-members-wrapper change name */
+/* team-member change name */

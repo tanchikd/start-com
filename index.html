@@ -14,7 +14,6 @@
     <title>Start</title>
   </head>
   <body>
-    <!-- <h1>пройтись поубирать fsz font family. у тебя должен быть font-family только у body/html</h1> -->
     <header>
       <div class="container header-wrapper">
         <a href="index.html">
@@ -22,8 +21,8 @@
         </a>
         <input id="menu-toggle" type="checkbox" />
         <label class='menu-button-container' for="menu-toggle">
-        <div class='menu-button'></div>
-      </label>
+          <div class='menu-button'></div>
+        </label>
         <ul class="menu">
           <li><a href="index.html" target="_self">Home</a></li>
           <li><a href="portfolio.html" target="_self">Portfolio</a></li>
@@ -45,48 +44,40 @@
               nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum,
               voluptate culpa nesciunt delectus iste?
             </div>
-            <!-- <h2>использовать для всех кнопкок один класс</h2>
-            <h2>а в данном случае перебить цвет другим классом</h2> -->
-          <div class="button-wrap">
-          <!-- как перебить класс? -->
-            <div><a href="/" class="button-all welcome-bttn">Explore</a>
+            <div class="button-wrap">
+              <a href="/" class="button button-white">Explore</a>
             </div>
-          </div>
           </div>
           <div class="welcome-img">
             <img src="img/main-img.svg" alt="Group" />
           </div>
         </div>
       </div>
-      <div class="main-block">
-        <div class="container">
-          <div class="main-block-text">
-            <div class="main-text">partners</div>
-            <div class="main-title">Lorem Ipsum Dolor</div>
-            <div class="main-info-text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </div>
-          </div>
-          <div class="partners-imgs">
-            <img src="img/google.svg" alt="Google"></img>
-            <img src="img/microsoft.svg" alt="Microsoft"></img>
-            <img src="img/airbnb.svg" alt="airbnb"></img>
-            <img src="img/facebook.svg" alt="facebook"></img>
-            <img src="img/spotify.svg" alt="spotify"></img>
-          </div>
-          <div class="center-button-wrap">
-            <a href="/" class="button-all">Learn more</a>
+      <div class="container">
+        <div class="main-block-text">
+          <div class="main-text">partners</div>
+          <div class="main-title">Lorem Ipsum Dolor</div>
+          <div class="main-info-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           </div>
         </div>
+        <div class="partners-imgs">
+          <img src="img/google.svg" alt="Google"></img>
+          <img src="img/microsoft.svg" alt="Microsoft"></img>
+          <img src="img/airbnb.svg" alt="airbnb"></img>
+          <img src="img/facebook.svg" alt="facebook"></img>
+          <img src="img/spotify.svg" alt="spotify"></img>
+        </div>
+        <div class="center-button-wrap">
+          <a href="/" class="button">Learn more</a>
+        </div>
       </div>
-    </div>
-      <!-- <h2>сделать одинаковые классы у блоков conection-block working-block</h2> -->
       <div class="container">
         <div class="info-block">
           <div class="info-img">
             <img src="img/sending.svg" alt="mailing" />
           </div>
-          <div class="info-block-text">
+          <div class="info-block-wrapper">
             <div class="info-title">
               Lorem ipsum dolor sit amet consectetur
             </div>
@@ -96,7 +87,7 @@
               voluptate culpa nesciunt delectus iste?
             </div>
             <div class="button-wrap">
-              <a href="/" class="button-all">Learn more</a>
+              <a href="/" class="button">Learn more</a>
             </div>          
           </div>
         </div>
@@ -106,7 +97,7 @@
           <div class="info-img">
             <img src="img/working.svg" alt="working" />
           </div>
-          <div class="info-block-text">
+          <div class="info-block-wrapper">
             <div class="info-title">
               Lorem ipsum dolor sit amet consectetur
             </div>
@@ -116,49 +107,45 @@
               voluptate culpa nesciunt delectus iste?
             </div>
             <div class="button-wrap">
-              <a href="/" class="button-all">Learn more</a>
+              <a href="/" class="button">Learn more</a>
             </div>          
           </div>
         </div>
       </div>
-      <div class="main-block">
-        <div class="container">
-          <!-- <h2>сделать одинаковые классы для блоков team-block-text partners-block-text</h2> -->
-          <div class="main-block-text">
-            <div class="main-text">team</div>
-            <div class="main-title">Our Talents</div>
-            <div class="main-info-text">
-              Lorem ipsum, dolor sit amet consectetur
-              Suscipit nemo hic quos, ab,           
-            </div>
+      <div class="container">
+        <div class="main-block-text">
+          <div class="main-text">team</div>
+          <div class="main-title">Our Talents</div>
+          <div class="main-info-text">
+            Lorem ipsum, dolor sit amet consectetur
+            Suscipit nemo hic quos, ab,           
           </div>
-          <!-- <h2>убрать ссылки</h2> -->
-          <div class="team-members">
-            <div class="team-members-wrapper">
-              <img src="img/peg.svg" alt="peg"></img>
-              <div class="team-members-name">Peg Legge</div>
-              <div class="team-members-position">CEO</div>
-            </div>
-            <div class="team-members-wrapper">
-                <img src="img/richard.svg" alt="richadr"></img>
-              <div class="team-members-name">Richard Guerra</div>
-              <div class="team-members-position">CTO</div>
-            </div>
-            <div class="team-members-wrapper">
-                <img src="img/alexandra.svg" alt="alexandra"></img>
-              </a>
-              <div class="team-members-name">Alexandra Stolz</div>
-              <div class="team-members-position">DESIGNER</div>
-            </div>
-            <div class="team-members-wrapper">
-                <img src="img/janet.svg" alt="janet"></img>
-              <div class="team-members-name">Janet Bray</div>
-              <div class="team-members-position">DEVELOPER</div>
-            </div>
+        </div>
+        <div class="team-members-wrapper">
+          <div class="team-member">
+            <img src="img/peg.svg" alt="peg"></img>
+            <div class="team-member-name">Peg Legge</div>
+            <div class="team-member-position">CEO</div>
           </div>
-          <div class="center-button-wrap">
-            <a href="/" class="button-all">View Team</a>
+          <div class="team-member">
+              <img src="img/richard.svg" alt="richadr"></img>
+            <div class="team-member-name">Richard Guerra</div>
+            <div class="team-member-position">CTO</div>
           </div>
+          <div class="team-member">
+              <img src="img/alexandra.svg" alt="alexandra"></img>
+            </a>
+            <div class="team-member-name">Alexandra Stolz</div>
+            <div class="team-member-position">DESIGNER</div>
+          </div>
+          <div class="team-member">
+              <img src="img/janet.svg" alt="janet"></img>
+            <div class="team-member-name">Janet Bray</div>
+            <div class="team-member-position">DEVELOPER</div>
+          </div>
+        </div>
+        <div class="center-button-wrap">
+          <a href="/" class="button">View Team</a>
         </div>
       </div>
     </main>
@@ -176,8 +163,7 @@
           </div>
           <div class="footer-copyright-text">© Start, 2022. All rights reserved.</div>
         </div>
-    </div>
+      </div>
     </footer>
-      
   </body>
 </html>
