@@ -302,12 +302,12 @@ footer {
 
 /* Services */
 
-.services {
+.services-wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.services-wrapper {
+.service-item {
   padding: 2.5rem 2rem;
   background: #ffffff;
   box-shadow: 3px 4px 12px 1px #00000040;
@@ -315,7 +315,7 @@ footer {
   margin: 2rem 2rem;
 }
 
-.services-block-text {
+.service-item-head {
   text-align: center;
 }
 
@@ -325,7 +325,7 @@ footer {
   color: #000000;
 }
 
-.services-title {
+.service-price {
   display: flex;
   text-align: center;
   justify-content: center;
@@ -333,21 +333,21 @@ footer {
   margin: 1rem;
 }
 
-.services-title div {
+.service-price div {
   font-weight: 700;
   font-size: 2.5rem;
   color: #212529;
   padding-right: 0.5rem;
 }
 
-.services-title span {
+.service-price span {
   display: block;
   font-weight: 400;
   font-size: 1rem;
   color: #21252980;
 }
 
-ol li:before {
+.service-item-list li:before {
   font-family: "Font Awesome 5 Free";
   content: "\f00c";
   display: inline-block;
