@@ -20,22 +20,21 @@
   <body>
     <!-- <h1>пройтись поубирать fsz font family. у тебя должен быть font-family только у body/html</h1> -->
     <header>
-        <div class="container header-wrapper">
-          <a href="index.html">
-            <img src="img/logo.svg" alt="Start" />
-          </a>
-          <input id="menu-toggle" type="checkbox" />
-          <label class='menu-button-container' for="menu-toggle">
-          <div class='menu-button'></div>
-        </label>
-          <ul class="menu">
-            <li><a href="index.html" target="_self">Home</a></li>
-            <li><a href="portfolio.html" target="_self">Portfolio</a></li>
-            <li><a href="services.html" target="_self">Services</a> </li>
-            <li><a href="contact.html" target="_self">Contact</a></li>
-          </ul>
+      <div class="container header-wrapper">
+        <a href="index.html" class="header-logo">
+          <img src="img/logo.svg" alt="Start" />
+        </a>
+        <div class="header-burger">
+          <span></span>
         </div>
-      </header>
+        <ul class="menu">
+          <li><a href="index.html" target="_self">Home</a></li>
+          <li><a href="portfolio.html" target="_self">Portfolio</a></li>
+          <li><a href="services.html" target="_self">Services</a> </li>
+          <li><a href="contact.html" target="_self">Contact</a></li>
+        </ul>
+      </div>
+    </header>
     <main>
       <div class="main-block">
         <div class="container">
@@ -49,12 +48,11 @@
       </div>
       <div class="container">
         <div class="contact-block">
-          <div class="contact-info">
             <form action="#" method="get">
               <label for="name">Name</label>
-              <input class="contact-input" type="text" size="80" />
+              <input class="contact-input" type="text" />
               <label for="email">Email</label>
-              <input class="contact-input" type="email" size="80" />
+              <input class="contact-input" type="email" />
               <label for="message">Message</label>
               <textarea
                 name="message"
@@ -62,9 +60,8 @@
                 cols="65"
                 rows="4"
               ></textarea>
-              <input class="submit-botton" type="submit" value="Submit" />
+              <input class="submit-button" type="submit" value="Submit" />
             </form>
-          </div>
           <div class="contact-map">
             <iframe
               width="100%"

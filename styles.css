@@ -54,6 +54,14 @@ a:active {
   align-items: center;
 }
 
+.header-logo img {
+  max-width: 100%;
+}
+
+.header-burger {
+  display: none;
+}
+
 .menu {
   display: flex;
   justify-content: center;
@@ -61,6 +69,8 @@ a:active {
   align-content: center;
   font-size: 1.2rem;
   color: #ffffff;
+  position: relative;
+  z-index: 1;
 }
 
 .menu li {
@@ -174,8 +184,6 @@ a:active {
   color: #000000;
   max-width: 320px;
 }
-
-/* Общие  */
 
 .info-block {
   display: flex;
@@ -366,8 +374,10 @@ footer {
   justify-content: space-between;
 }
 
-.contact-input {
+.contact-block input[type="text"],
+[type="email"] {
   display: block;
+  width: 540px;
   padding: 0.5rem 0;
   border-radius: 0.3rem;
   background-color: #eeeeee;
@@ -379,7 +389,7 @@ footer {
 }
 
 textarea {
-  overflow: hidden;
+  /* overflow: hidden; */
   resize: unset;
   border: solid #000000;
   border-radius: 0.3rem;
@@ -387,7 +397,7 @@ textarea {
   background-color: #eeeeee;
   margin: 1rem 0 1rem;
 }
-.submit-botton {
+.submit-button {
   background-color: #000000;
   border: none;
   border-radius: 0.3rem;
@@ -404,6 +414,9 @@ textarea {
   html,
   body {
     height: 100%;
+  }
+
+  body.lock {
     overflow: hidden;
   }
   .container {
@@ -412,15 +425,73 @@ textarea {
     padding: 1rem;
   }
 
+  .header-logo {
+    z-index: 2;
+    flex: 0 0 150px;
+  }
+  .header-burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+  }
+
+  .header-burger span {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+    transition: all 0.3s ease 0s;
+  }
+
+  .header-burger::before,
+  .header-burger::after {
+    content: "";
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 2px;
+    transition: all 0.3s ease 0s;
+  }
+  .header-burger::before {
+    top: 0;
+  }
+
+  .header-burger::after {
+    bottom: 0;
+  }
+
+  .header-burger.active::before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .header-burger.active::after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .header-burger.active span {
+    transform: scale(0);
+  }
+
   .menu {
     position: absolute;
-    top: 0;
+    top: -100%;
     background: #73c69d;
     width: 100%;
+    overflow: auto;
     left: 0;
     right: 0;
+    transition: all 0.5s ease 0s;
     flex-direction: column;
     min-height: 100%;
+  }
+
+  .menu.active {
+    top: 0;
   }
 
   .menu li {
@@ -541,5 +612,3 @@ textarea {
     width: 90%;
   }
 }
-
-/* team-member change name */
