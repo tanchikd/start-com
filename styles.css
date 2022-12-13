@@ -377,7 +377,6 @@ footer {
 .contact-block input[type="text"],
 [type="email"] {
   display: block;
-  width: 540px;
   padding: 0.5rem 0;
   border-radius: 0.3rem;
   background-color: #eeeeee;
@@ -389,8 +388,7 @@ footer {
 }
 
 textarea {
-  /* overflow: hidden; */
-  resize: unset;
+  resize: none;
   border: solid #000000;
   border-radius: 0.3rem;
   display: block;

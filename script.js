@@ -1,6 +1,7 @@
-$(document).ready(function () {
-  $(".header-burger").click(function (event) {
-    $(".header-burger,.menu").toggleClass("active");
-    $("body").toggleClass("lock");
-  });
+const element = document.querySelector(".header-burger");
+const menu = document.querySelector(".menu");
+
+element.addEventListener("click", (event) => {
+  event.target.classList.toggle("active");
+  menu.classList.toggle("active");
 });
