@@ -424,7 +424,6 @@ textarea {
   }
 
   .header-logo {
-    z-index: 2;
     flex: 0 0 150px;
   }
   .header-burger {
@@ -478,7 +477,7 @@ textarea {
   .menu {
     position: absolute;
     top: -100%;
-    background: #73c69d;
+    background: #69a789;
     width: 100%;
     overflow: auto;
     left: 0;
