@@ -95,7 +95,7 @@ a:active {
 }
 
 .menu a:hover {
-  color: #c9c9c9;
+  filter: invert(0.5);
 }
 
 #menu-toggle {
@@ -296,12 +296,12 @@ footer {
 
 .footer-social-wrapper {
   display: flex;
-  justify-content: space-betwe sen;
+  justify-content: space-between;
   align-items: center;
 }
 
 .footer-social-wrapper a {
-  padding: 0.5rem;
+  padding-right: 2rem;
 }
 
 .footer-copyright-text {
@@ -316,6 +316,10 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+.footer-social-wrapper div:hover {
+  filter: invert(0.5);
 }
 
 .instagram {
