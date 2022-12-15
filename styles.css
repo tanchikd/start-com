@@ -95,7 +95,7 @@ a:active {
 }
 
 .menu a:hover {
-  filter: invert(0.5);
+  color: #c9c9c9;
 }
 
 #menu-toggle {
@@ -316,10 +316,11 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  transition-duration: 0.5s;
 }
 
-.footer-social-wrapper div:hover {
-  filter: invert(0.5);
+.facebook:hover {
+  background-image: url("img/fb_hover.svg");
 }
 
 .instagram {
@@ -327,6 +328,11 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  transition-duration: 0.5s;
+}
+
+.instagram:hover {
+  background-image: url("img/inst_hover.svg");
 }
 
 .twiter {
@@ -334,6 +340,11 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  transition-duration: 0.5s;
+}
+
+.twiter:hover {
+  background-image: url("img/tw_hover.svg");
 }
 
 .pinterest {
@@ -341,6 +352,11 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  transition-duration: 0.5s;
+}
+
+.pinterest:hover {
+  background-image: url("img/pint_hover.svg");
 }
 
 .tiktok {
@@ -348,6 +364,11 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  transition-duration: 0.5s;
+}
+
+.tiktok:hover {
+  background-image: url("img/tik_hover.svg");
 }
 
 .whatsapp {
@@ -355,6 +376,11 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  transition-duration: 0.5s;
+}
+
+.whatsapp:hover {
+  background-image: url("img/whats_hover.svg");
 }
 
 .youtube {
@@ -362,21 +388,14 @@ footer {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  transition-duration: 0.5s;
+}
+
+.youtube:hover {
+  background-image: url("img/yt_hover.svg");
 }
 
 /* Portfolio */
-
-.works-block {
-  text-align: center;
-  background-color: #ffffff;
-  justify-content: center;
-  width: 100%;
-  flex-direction: column;
-}
-
-.works-block-text {
-  padding: 0 22rem;
-}
 
 .portfolio {
   display: flex;
