@@ -30,7 +30,6 @@ a:active {
 .button-wrap a:hover {
   background-color: #a4a3a3;
   color: #000000;
-  padding: 1.3rem 3.3rem;
 }
 
 .center-button-wrap {
@@ -43,7 +42,6 @@ a:active {
 .center-button-wrap a:hover {
   background-color: #a4a3a3;
   color: #000000;
-  padding: 1.3rem 3.3rem;
 }
 
 .button {
@@ -93,10 +91,11 @@ a:active {
 
 .menu a {
   padding: 1rem;
+  transition-duration: 0.5s;
 }
 
 .menu a:hover {
-  color: #dadada;
+  color: #c9c9c9;
 }
 
 #menu-toggle {
@@ -255,11 +254,11 @@ a:active {
   background: #ffffff;
   box-shadow: 3px 4px 12px 1px #00000040;
   border-radius: 5px;
-  transition-duration: 2s;
+  cursor: pointer;
+  transition-duration: 1s;
 }
 
 .team-member:hover {
-  padding: 2.5rem 3rem;
   background: #e6e4e4;
   box-shadow: 3.5px 4.5px 12.5px 1.5px #00000040;
 }
@@ -297,16 +296,12 @@ footer {
 
 .footer-social-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-betwe sen;
   align-items: center;
 }
 
 .footer-social-wrapper a {
-  padding: 0 0.5rem;
-}
-
-.footer-social-wrapper a:hover {
-  padding: 0.1rem 0.7rem;
+  padding: 0.5rem;
 }
 
 .footer-copyright-text {
@@ -314,6 +309,55 @@ footer {
   font-size: 1.2rem;
   text-align: right;
   color: #ffffff;
+}
+
+.facebook {
+  background-image: url("img/fb.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.instagram {
+  background-image: url("img/inst.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.twiter {
+  background-image: url("img/tw.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.pinterest {
+  background-image: url("img/pint.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.tiktok {
+  background-image: url("img/tik.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.whatsapp {
+  background-image: url("img/whats.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.youtube {
+  background-image: url("img/yt.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 /* Portfolio */
