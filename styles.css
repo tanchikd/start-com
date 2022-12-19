@@ -475,8 +475,13 @@ footer {
   justify-content: space-between;
 }
 
+.contact-form {
+  width: 45%;
+}
+
 .contact-block input[type="text"],
 [type="email"] {
+  width: 100%;
   display: block;
   padding: 0.5rem 0;
   border-radius: 0.3rem;
@@ -489,22 +494,32 @@ footer {
 }
 
 textarea {
+  width: 100%;
   resize: none;
   border: solid #000000;
   border-radius: 0.3rem;
   display: block;
   background-color: #eeeeee;
   margin: 1rem 0 1rem;
+  padding: 1rem 0;
 }
+
 .submit-button {
   background-color: #000000;
   border: none;
   border-radius: 0.3rem;
-  padding: 0.5rem 15.1rem;
   text-align: center;
   color: #ffffff;
   font-weight: 400;
   font-size: 1.2rem;
+  padding: 1rem 0;
+  width: 100%;
+  transition-duration: 0.5s;
+}
+
+.submit-button:hover {
+  background-color: #a4a3a3;
+  color: #000000;
 }
 
 @media screen and (max-width: 425px) {
