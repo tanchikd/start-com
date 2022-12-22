@@ -696,9 +696,6 @@ footer {
 
   /* Footer */
 
-  .footer-copyright-text {
-    font-size: 1.7rem;
-  }
   .footer-wrapper {
     flex-direction: column;
   }
@@ -715,7 +712,9 @@ footer {
   }
 
   .footer-copyright-text {
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    padding-top: 1rem;
   }
 
   /* Portfolio */
