@@ -509,8 +509,7 @@ footer {
   font-family: "Work Sans", sans-serif;
 }
 
-.contact-form input[type="text"]:focus,
-[type="email"]:focus {
+.contact-form-field:focus {
   background-color: #f9f6f6;
 }
 
@@ -521,10 +520,6 @@ footer {
 .contact-form textarea {
   height: 6rem;
   resize: none;
-}
-
-.contact-block textarea:focus {
-  background-color: #f9f6f6;
 }
 
 .submit-button {
