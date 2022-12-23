@@ -301,7 +301,7 @@ footer {
 }
 
 .footer-social-wrapper a {
-  padding-right: 2rem;
+  padding: 0.5rem;
 }
 
 .footer-copyright-text {
@@ -311,12 +311,17 @@ footer {
   color: #ffffff;
 }
 
-.facebook {
-  background-image: url("img/fb.svg");
+.social-icon {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
   transition-duration: 0.5s;
+  width: 2rem;
+  height: 1.5rem;
+}
+
+.facebook {
+  background-image: url("img/fb.svg");
 }
 
 .facebook:hover {
@@ -325,10 +330,6 @@ footer {
 
 .instagram {
   background-image: url("img/inst.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  transition-duration: 0.5s;
 }
 
 .instagram:hover {
@@ -337,10 +338,6 @@ footer {
 
 .twiter {
   background-image: url("img/tw.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  transition-duration: 0.5s;
 }
 
 .twiter:hover {
@@ -349,10 +346,6 @@ footer {
 
 .pinterest {
   background-image: url("img/pint.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  transition-duration: 0.5s;
 }
 
 .pinterest:hover {
@@ -361,10 +354,6 @@ footer {
 
 .tiktok {
   background-image: url("img/tik.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  transition-duration: 0.5s;
 }
 
 .tiktok:hover {
@@ -373,10 +362,6 @@ footer {
 
 .whatsapp {
   background-image: url("img/whats.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  transition-duration: 0.5s;
 }
 
 .whatsapp:hover {
@@ -385,10 +370,6 @@ footer {
 
 .youtube {
   background-image: url("img/yt.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  transition-duration: 0.5s;
 }
 
 .youtube:hover {
@@ -642,7 +623,14 @@ footer {
   }
 
   .welcome-info,
-  .info-block-wrapper,
+  .info-block-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
   .welcome-img {
     width: 100%;
   }
@@ -692,6 +680,19 @@ footer {
 
   .team-member {
     margin-bottom: 2rem;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem 3.5rem;
+  }
+
+  .team-member div {
+    text-align: center;
+  }
+
+  .team-member img {
+    margin-bottom: 1rem;
+    width: 100%;
   }
 
   /* Footer */
@@ -702,18 +703,14 @@ footer {
 
   .footer-social-wrapper {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
   }
 
-  .footer-social-wrapper a {
-    padding: 1rem;
-  }
-
   .footer-copyright-text {
     margin-bottom: 0.5rem;
-    font-size: 1rem;
+    font-size: 1.3rem;
     padding-top: 1rem;
   }
 
