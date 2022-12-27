@@ -721,8 +721,10 @@ footer {
   }
 
   .portfolio img {
-    width: 335px;
+    max-width: 100%;
     margin-bottom: 2rem;
+    object-fit: cover;
+    max-height: 250px;
   }
 
   /* Services */
