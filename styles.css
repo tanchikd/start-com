@@ -1,4 +1,4 @@
-xhtml {
+html {
   font-size: 16px;
   font-family: "Work Sans", sans-serif;
 }
@@ -529,10 +529,11 @@ footer {
   body {
     height: 100%;
   }
-
+  /* 
   body.lock {
     overflow: hidden;
-  }
+  } */
+
   .container {
     max-width: none;
     margin: 0 auto;
@@ -587,11 +588,11 @@ footer {
     right: 0;
     transition: all 0.2s ease 0s;
     flex-direction: column;
-    min-height: 100%;
   }
 
   .menu.active {
     top: 0;
+    min-height: 100vh;
   }
 
   .header-burger.active span:nth-of-type(1) {
@@ -707,6 +708,10 @@ footer {
     width: 100%;
   }
 
+  .footer-social-wrapper a {
+    padding: 0;
+  }
+
   .footer-copyright-text {
     margin-bottom: 0.5rem;
     font-size: 1.3rem;
@@ -734,6 +739,7 @@ footer {
 
   .service-item {
     margin: 1rem;
+    text-align: center;
   }
 
   /* Contact */
