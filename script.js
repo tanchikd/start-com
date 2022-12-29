@@ -1,7 +1,11 @@
-const element = document.querySelector(".header-burger");
-const menu = document.querySelector(".menu");
+// Элемент куда добавлять класс
+const body = document.querySelector("body");
 
-element.addEventListener("click", function () {
-  element.classList.toggle("active");
-  menu.classList.toggle("active");
+// Элемент на который нужно нажать
+const burger = document.querySelector(".header-burger");
+
+// Добавляем обработчик событий на клик
+burger.addEventListener("click", () => {
+  // Переключаем класс menu-active у body при клике
+  body.classList.toggle("menu-active");
 });
