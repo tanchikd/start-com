@@ -530,9 +530,9 @@ footer {
     height: 100vh;
   }
 
-  body.lock {
-    overflow: hidden;
-  }
+  /* body.menu.active {
+    position: fixed;
+  } */
 
   .container {
     max-width: none;
@@ -557,6 +557,7 @@ footer {
     z-index: 2;
     overflow: hidden;
     cursor: pointer;
+    right: 10px;
   }
 
   .header-burger span {
@@ -597,6 +598,7 @@ footer {
   .menu.active {
     top: 0;
     min-height: 100vh;
+    position: fixed;
   }
 
   .header-burger.active span:nth-of-type(1) {
@@ -758,38 +760,5 @@ footer {
   .contact-form {
     width: 100%;
     margin-bottom: 1rem;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  html,
-  body {
-    height: 100%;
-  }
-  /* 
-  body.lock {
-    overflow: hidden;
-  } */
-
-  .container {
-    max-width: none;
-    margin: 0 auto;
-    padding: 1.5rem;
-  }
-
-  .welcome-img {
-    width: 100%;
-  }
-
-  .welcome-img img {
-    max-width: 100%;
-  }
-
-  .portfolio {
-    display: block;
-  }
-
-  .portfolio img {
-    width: 100%;
   }
 }
