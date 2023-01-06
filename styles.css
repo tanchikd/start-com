@@ -809,8 +809,13 @@ footer {
     flex-direction: column;
   }
 
-  .menu a {
-    padding: 0.5rem 4rem;
+  .menu a:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 
   .menu-active .menu {
@@ -833,9 +838,11 @@ footer {
   }
 
   .menu li {
-    padding: 2rem 3.5rem;
+    position: relative;
+    width: 100%;
+    text-align: center;
     border-bottom: 1px solid #244132;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
   }
 
   .welcome-wrapper {
